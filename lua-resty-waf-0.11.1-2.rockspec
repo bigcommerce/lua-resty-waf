@@ -1,7 +1,8 @@
 package = "lua-resty-waf"
-version = "0.11.1-1"
+version = "0.11.1-2"
 source = {
-   url = "gitrec+https://github.com/p0pr0ck5/lua-resty-waf",
+   url = "gitrec+https://github.com/bigcommerce/lua-resty-waf",
+   branch = "bigcommerce",
 }
 description = {
    summary = "High-performance WAF built on the OpenResty stack",
@@ -15,5 +16,5 @@ dependencies = {
 }
 build = {
    type = "make",
-   install_target = "install-hard",
+   install_target = "install",
 }
