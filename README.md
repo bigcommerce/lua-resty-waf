@@ -1282,3 +1282,5 @@ Please report bugs by creating a ticket with the GitHub issue tracker.
 
 - The OpenResty project: <http://openresty.org/>
 - My personal blog for updates and notes on lua-resty-waf development: <http://www.cryptobells.com/tag/lua-resty-waf/>
+
+
