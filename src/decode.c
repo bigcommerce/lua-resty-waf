@@ -69,12 +69,15 @@ int js_decode(unsigned char *input, long int input_len) {
 				char input[4];
 				int j = 0;
 
+				#pragma GCC diagnostic push
+				#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
 				while((i + 1 + j < input_len)&&(j < 3)) {
 					input[j] = input[i + 1 + j];
 					j++;
 					if (!ISODIGIT(input[i + 1 + j])) break;
 				}
 				input[j] = '\0';
+				#pragma GCC diagnostic pop
 
 				if (j > 0) {
 					if ((j == 3) && (input[0] > '3')) {
