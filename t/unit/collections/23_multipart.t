@@ -39,6 +39,7 @@ __DATA__
 				{
 					_pcre_flags = 'joi',
 					_process_multipart_body = true,
+					_process_body = true,
 				},
 				{
 					["content-type"] = ngx.req.get_headers()['content-type']
@@ -74,6 +75,7 @@ nil
 				{
 					_pcre_flags = 'joi',
 					_process_multipart_body = true,
+					_process_body = true,
 				},
 				{
 					["content-type"] = ngx.req.get_headers()['content-type']
@@ -109,6 +111,7 @@ test
 				{
 					_pcre_flags = 'joi',
 					_process_multipart_body = true,
+					_process_body = true,
 				},
 				{
 					["content-type"] = ngx.req.get_headers()['content-type']
@@ -144,6 +147,7 @@ q#POST /t# . $::mock_upload
 				{
 					_pcre_flags = 'joi',
 					_process_multipart_body = true,
+					_process_body = true,
 				},
 				{
 					["content-type"] = ngx.req.get_headers()['content-type']
@@ -177,6 +181,7 @@ q#POST /t# . $::mock_upload
 				{
 					_pcre_flags = 'joi',
 					_process_multipart_body = true,
+					_process_body = true,
 				},
 				{
 					["content-type"] = ngx.req.get_headers()['content-type']
